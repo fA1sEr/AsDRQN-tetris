@@ -247,7 +247,7 @@ class GameState:
 
                 terminal = True
                 self.reinit()
-		        reward = -10
+                reward = -10
                 return x_t, reward, terminal, cleared # can't fit a new piece on the self.board, so game over
 
 
