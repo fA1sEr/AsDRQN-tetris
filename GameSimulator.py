@@ -2,7 +2,7 @@ import itertools as it
 import skimage.color
 import skimage.transform
 import numpy as np
-import tetris_fun
+from tetris_fun import GameState
 
 class GameSimulator:
     def __init__(self, frame_repeat=4, resolution=(10, 20, 1)):
