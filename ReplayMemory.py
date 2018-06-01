@@ -1,3 +1,4 @@
+#-*- coding: UTF-8 -*-
 from random import sample
 import numpy as np
 

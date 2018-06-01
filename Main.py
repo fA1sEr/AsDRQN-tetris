@@ -1,3 +1,4 @@
+#-*- coding: UTF-8 -*-
 import itertools as it
 import os
 from time import time, sleep
@@ -5,8 +6,6 @@ import numpy as np
 import skimage.color
 import skimage.transform
 import tensorflow as tf
-from tqdm import trange
-from vizdoom import *
 from Agent import Agent
 from GameSimulator import GameSimulator
 

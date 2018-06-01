@@ -1,3 +1,4 @@
+#-*- coding: UTF-8 -*-
 from random import randint, random
 import numpy as np
 from Network import Network

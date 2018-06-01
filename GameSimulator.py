@@ -1,3 +1,4 @@
+#-*- coding: UTF-8 -*-
 import itertools as it
 import skimage.color
 import skimage.transform
