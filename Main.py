@@ -30,7 +30,7 @@ EPSILON_DECAY_STEPS = 2e5 # How many steps to decay from max exploration to min 
 RANDOM_WANDER_STEPS = 50000 # How many steps to be sampled randomly before training starts
 
 TRACE_LENGTH = 8 # How many traces are used for network updates
-HIDDEN_SIZE = 768 # Size of the third convolutional layer when flattened
+HIDDEN_SIZE = 384 # Size of the third convolutional layer when flattened
 
 EPOCHS = 20000000 # Epochs for training (1 epoch = 200 training Games and 10 test episodes)
 GAMES_PER_EPOCH = 1000 # How actions to be taken per epoch
