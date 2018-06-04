@@ -32,6 +32,8 @@ class GameSimulator:
     
     # 对游戏图像进行处理，后期可能放到GameSimulator中
     def __preprocess(self, img):
+	print(img)
+	print(self.resolution)
 	img = np.array(img)
         img = np.reshape(img, self.resolution)
         img = img.astype(np.float32)

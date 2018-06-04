@@ -48,7 +48,7 @@ class Network:
         self.target_q = tf.placeholder(shape=[None], dtype=tf.float32)
         self.actions = tf.placeholder(shape=[None], dtype=tf.int32)
         self.actions_onehot = tf.one_hot(self.actions, action_count, dtype=tf.float32)
-        self.q_chosen = tf.reduce_sum(tf.mul(self.q, self.actions_onehot), 1)
+        self.q_chosen = tf.reduce_sum(tf.mul(self.q, self.actions_onehot), axis=1)
 
         cost1 = tf.square(self.q_chosen - self.target_q)  # Find the squared error...
         self.loss = tf.reduce_mean(cost1)
